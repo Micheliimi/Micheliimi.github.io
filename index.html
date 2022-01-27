@@ -3,11 +3,73 @@
     <head>
         <meta charset="UTF-8">
         <title>Portfólio - Michele</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200&family=Open+Sans+Condensed:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+        <style> 
+        body{
+                background-color: #fde2e4;
+                font-family: 'Montserrat Alternates', sans-serif;
+            }
+            h1 {
+
+            }
+            #nome{
+                
+            }
+            #descricao{
+                
+                font-size: 16px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+            h4 { 
+                font-size: 20px;
+            }
+            li {
+                font-size: 16px;
+            }
+            a{
+                text-decoration: none;
+            }
+            em {
+                text-decoration: underline;
+            }
+            strong {
+                text-decoration: underline;
+            }
+            #github-bottom {
+                color: white;
+                cursor: crosshair;
+                background-color: black;
+                padding: 10px;
+                border-radius: 10px;
+                line-height: 60px;
+            }
+            #linkedin-bottom {
+                color: white;
+                cursor: crosshair;
+                background-color: black;
+                padding: 10px;
+                border-radius: 10px;
+            }
+
+            .list {
+                font-size: 20px;
+            }
+           
+        </style>
     </head>
     <body>
         <h1>Meu Portfólio Web</h1>
-        <h2>Michele de Oliveira Gusmão<h2>
         <img id="minhafoto" src="minhafoto.jpeg" alt="Foto de perfil - Michele Gusmão" width="200px">
+        <h2 id="nome">Michele de Oliveira Gusmão<h2>
+        
 
         <h3>Índice</h3>
         <ol>
@@ -17,10 +79,10 @@
             <li><a href="#meencontre">Perfis</a></li>
         </ol>
         
-        <h3 id="sobre">Sobre</h3>
+        <h4 id="sobre">Sobre</h4>
             <p>Meu nome é Michele de Oliveira Gusmão, sou <em>brasileira</em> e moro em <em>São Paulo-SP</em>.<br>Estudo Desenvolvimento Web na Tybe e sou graduada em Engenharia Civil.<br> Me apainoxei cedo por tecnologia e por esse motivo, estou sempre em busca de ampliação do conhecimento na área.<br>Tenho ótima comunicação, acredito no trabalho em equipe e foco sempre na qualidade do resultado.</p>
             
-        <h3 id="hab">Habilidades</h3>
+        <h4 id="hab">Habilidades</h4>
         <ul>
             <li><strong>Comunicação</strong></li>
             <li>Autoconhecimento</li>
@@ -31,21 +93,23 @@
             <li>Prestatividade</li>
         </ul>
 
-            <h3 id="curi">Curiosidades</h3>
+            <h4 id="curi">Curiosidades</h4>
             <ul>
                 <li>Canto e toco violão</li>
                 <li>Jogo League of Legends</li>
                 <li>Tenho um cachorro de raça Chihuahua que se chama <strong>Homer</strong></li>
                 <li>Uso óculos pra trabalhar</li>
                 <li>Escrevi uma página do livro sobre a obra do <strong>Sistema Produtor de Água São Lourenço</strong></li>
-                <li>A <a href="#minhafoto">foto do meu Perfil</a>foi feita no mesmo dia das fotos para o livro</li>
+                <li class="list">A <a href="#minhafoto"> foto do meu Perfil</a> foi feita no mesmo dia das fotos para o livro</li>
                 <li>Participei do Parlamento Jovem e Deputada por um dia</li>
             </ul>
 
-            <h3 id="meencontre">Perfis</h3>
-            <ul>
-                <li><a href="https://github.com/Micheliimi" target="_blank"><strong>GitHub</strong></a></li>
-                <li><a href="https://www.linkedin.com/in/michelegusmao/" target="_blank"><strong>Linkedln</strong></a></li>
-            </ul>
+            <h4 id="meencontre">Perfis</h4>
+            
+                <a id="github-bottom" href="https://github.com/Micheliimi" target="_blank"><strong>GitHub</strong></a></li>
+                <br>
+                <br>
+                <a id="linkedin-bottom" href="https://www.linkedin.com/in/michelegusmao/" target="_blank"><strong>Linkedln</strong></a></li>
+            
     </body>
 </html>
