@@ -1,3 +1,69 @@
+body {
+background-color: rgb(212, 136, 241);
+}
+header {
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 90%;
+  margin: 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 40px;
+}
+p{
+  font-size: 18px;
+}
+.left {
+  margin-left: 20px; 
+ }
+
 .completed {
   text-decoration: line-through;
 }
+
+input{
+  border: 1px solid rgb(111, 102, 238);
+  width: 350px;
+  height: 20px;
+}
+.botao {
+  border-radius: 5px;
+  padding: 4px;
+  margin-right: 5px;
+  color:white;
+  font-weight: bold;
+  font-size: 15px;
+  height: 30px;
+}
+
+li{
+  font-size: 18px;
+}
+
+#selecionado {
+  width: 90%;
+}
+.limpar{
+  background-color: rgb(223, 43, 43);
+}
+
+#criar-tarefa{
+  background-color: rgb(17, 197, 17);
+
+}
+.mover {
+  background-color: rgb(238, 163, 94);
+  color: black;
+}
+#remover-finalizados{
+  background-color: rgb(22, 22, 247);
+}
+#salvar-tarefas{
+  background-color: rgb(212, 136, 241);
+}
+

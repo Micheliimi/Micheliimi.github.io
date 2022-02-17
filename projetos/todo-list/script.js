@@ -1,3 +1,4 @@
+
 const header = document.getElementsByTagName('header')[0];
 const section1 = document.getElementById('input-button');
 const section2 = document.getElementById('ol-li');
@@ -5,44 +6,37 @@ const section3 = document.getElementById('botoes');
 const input = document.getElementById('texto-tarefa');
 
 
-const botaoAdicionar = document.createElement('button');
-botaoAdicionar.innerText = 'Adicionar';
-botaoAdicionar.id = "criar-tarefa";
-section1.appendChild(botaoAdicionar);
+const botaoAdicionar = document.getElementById('criar-tarefa');
 
-const botaoApagaTudo = document.createElement('button');
-botaoApagaTudo.id = "apaga-tudo";
-botaoApagaTudo.innerText = 'X';
-section3.appendChild(botaoApagaTudo);
+const botaoApagaTudo = document.getElementById('apaga-tudo');
 
-const botaoRmvFinalizados = document.createElement('button');
-botaoRmvFinalizados.innerText = "Limpar Completos";
-botaoRmvFinalizados.id = "remover-finalizados";
-section3.appendChild(botaoRmvFinalizados);
+const botaoRmvFinalizados = document.getElementById('remover-finalizados');
 
-const botaoSalvaTarefa = document.createElement("button");
-botaoSalvaTarefa.id = "salvar-tarefas";
-botaoSalvaTarefa.innerText = "Salvar Tarefas";
-section3.appendChild(botaoSalvaTarefa);
+const botaoSalvaTarefa = document.getElementById('salvar-tarefas');
 
-const botaoMoverCima = document.createElement('button');
-botaoMoverCima.id = 'mover-cima';
-botaoMoverCima.innerText = '↑';
-section3.appendChild(botaoMoverCima);
+const botaoMoverCima = document.getElementById('mover-cima');
 botaoMoverCima.addEventListener('click', movePraCima);
 
-const botaoMoverBaixo = document.createElement('button');
-botaoMoverBaixo.id = 'mover-baixo';
-botaoMoverBaixo.innerText = '↓';
-section3.appendChild(botaoMoverBaixo);
+const botaoMoverBaixo = document.getElementById('mover-baixo');
 botaoMoverBaixo.addEventListener('click', movePraBaixo);
 
-const botaoRemoveSel = document.createElement('button');
-botaoRemoveSel.id = "remover-selecionado";
-botaoRemoveSel.innerText = "Remove Tarefa Selecioada";
-section3.appendChild(botaoRemoveSel);
+const botaoRemoveSel = document.getElementById('remover-selecionado');
 botaoRemoveSel.addEventListener('click', removeTarefaSel);
 
+window.onload = function(){
+  function iniciar (){
+    let itens = localStorage.getItem('item-list');
+    let listaOrdenada = document.getElementsByTagName('ol')[0];
+    listaOrdenada.innerHTML = itens;
+    let elementoLi = document.getElementsByTagName('li');
+    for(i = 0; i < elementoLi .length; i += 1){
+      console.log(elementoLi [i]);
+      elementoLi [i].addEventListener('click', adicionaCorCinza); 
+      elementoLi [i].addEventListener('dblclick', adicionaRisco);
+    }
+  }
+iniciar ();
+}
 
 //Criação do botão "adicionar" e adicionando evento.
 function adicionaEventoBotaoAdicionar(){
@@ -64,7 +58,7 @@ function adicionaCorCinza (event){
     item[i].style.backgroundColor = 'white';
     item[i].id = '';
   }
-  event.target.style.backgroundColor = "gray";
+  event.target.style.backgroundColor = "rgb(207, 204, 204)";
   event.target.id = "selecionado";
 };
 
@@ -108,17 +102,8 @@ salvaTarefas();
 function salvaTarefasLocalStorage(){
   console.log('ola')
   let itens = document.getElementsByTagName('ol')[0];
-  
-    localStorage.setItem('item-list', itens.innerHTML);
-  
+  localStorage.setItem('item-list', itens.innerHTML);
 }
-
-window.onload = function(){
-  let itens = localStorage.getItem('item-list');
-  let listaOrdenada = document.getElementsByTagName('ol')[0];
-  listaOrdenada.innerHTML = itens;
-}
-
 
 function movePraCima(){
   const itemSel = document.querySelector('#selecionado');
@@ -127,23 +112,23 @@ function movePraCima(){
   }
   const itemDeCima = itemSel.previousElementSibling;
   if(itemDeCima){
-     document.querySelector('ol').insertBefore(itemSel,itemDeCima);
+    document.querySelector('ol').insertBefore(itemSel,itemDeCima);
   }
 }
 
 function movePraBaixo(){
- const itemSel = document.querySelector('#selecionado');
- if(itemSel === null){
-   return;
- }
- const itemdebaixo = itemSel.nextElementSibling;
- if(itemdebaixo){
+const itemSel = document.querySelector('#selecionado');
+if(itemSel === null){
+  return;
+}
+const itemdebaixo = itemSel.nextElementSibling;
+if(itemdebaixo){
     document.querySelector('ol').insertBefore(itemdebaixo,itemSel)
- }
+}
 }
 
 function removeTarefaSel(){
   const itemSel = document.querySelector('#selecionado');
   itemSel.remove();
-
 }
+
