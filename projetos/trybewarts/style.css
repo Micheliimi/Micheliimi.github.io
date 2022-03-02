@@ -254,7 +254,7 @@ footer {
   #evaluation-form , .apagaTudo {
     align-self: center;
     flex-wrap: wrap;
-    width: 450px;
+    width: 400px;
   }
 
   #email-casa , #nome-completo {
@@ -283,7 +283,7 @@ footer {
 
   .header {
     justify-content: space-around;
-    height: 200px;
+    height: 350px;
   }
 
   .trybewarts-login {
