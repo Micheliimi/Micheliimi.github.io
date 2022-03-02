@@ -238,6 +238,10 @@ footer {
     justify-content: center;
   }
 
+  .trybewarts-header-logo {
+    padding: 0 auto;
+  }
+
   .trybewarts-login {
     flex-direction: column;
     margin-right: 20px;
@@ -254,7 +258,7 @@ footer {
   #evaluation-form , .apagaTudo {
     align-self: center;
     flex-wrap: wrap;
-    width: 400px;
+    width: 380px;
   }
 
   #email-casa , #nome-completo {
