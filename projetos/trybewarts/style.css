@@ -254,10 +254,32 @@ footer {
   #evaluation-form , .apagaTudo {
     align-self: center;
     flex-wrap: wrap;
+    width: 450px;
+  }
+
+  #email-casa , #nome-completo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-family-learned {
+    flex-direction: column;
+  }
+
+  .family {
+    margin-bottom: 10px;
+  }
+
+  #label-content , #label-rate {
+    margin-bottom: 15px;
+  }
+
+  .container-avaliation {
+    flex-direction: column;
   }
 }
 
-@media screen and ( min-width : 768px ) and ( max-width : 1168px ) {
+@media screen and ( max-width : 1168px ) {
 
   .header {
     justify-content: space-around;
@@ -283,4 +305,3 @@ footer {
     flex-wrap: wrap;
   }
 }
-
