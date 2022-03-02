@@ -240,6 +240,7 @@ footer {
 
   .trybewarts-header-logo {
     padding: 0 auto;
+    margin: 0 auto;
   }
 
   .trybewarts-login {
@@ -259,6 +260,7 @@ footer {
     align-self: center;
     flex-wrap: wrap;
     width: 380px;
+    margin: 0 5px;
   }
 
   #email-casa , #nome-completo {
