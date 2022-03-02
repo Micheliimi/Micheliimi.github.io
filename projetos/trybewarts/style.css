@@ -257,17 +257,18 @@ footer {
   }
 }
 
-@media screen and ( max-width : 1023px ) {
+@media screen and ( min-width : 768px ) and ( max-width : 1168px ) {
 
   .header {
-    height: 200px;
     justify-content: space-around;
+    height: 200px;
   }
 
   .trybewarts-login {
     flex-direction: column;
     margin-right: 0;
-    align-items: center;  }
+    align-items: center;
+  }
 
   main {
     flex-direction: column-reverse;
@@ -282,3 +283,4 @@ footer {
     flex-wrap: wrap;
   }
 }
+
