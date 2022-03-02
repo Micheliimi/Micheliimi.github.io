@@ -1,0 +1,232 @@
+/* https://medium.com/@sixbillion/animacao-de-background-com-particles-js-9aaf8de58f99 */
+
+@keyframes changeBackgroundColor {
+
+  0% {
+    background-color: rgb(11, 12, 12);
+  }
+
+  20% {
+    background-color: rgb(235, 82, 72);
+  }
+
+  40% {
+    background-color: rgb(50, 167, 145);
+  }
+
+  60% {
+    background-color: rgb(248, 246, 95);
+  }
+
+  80% {
+    background-color: rgb(105, 74, 218);
+  }
+
+  100% {
+    background-color: rgb(11, 12, 12);
+  }
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: rgb(240, 235, 235);
+}
+
+.header {
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  animation: changeBackgroundColor 10s infinite;
+}
+
+#trybewarts-header-title {
+  color: white;
+  display: flex;
+  text-align: center;
+  font-size: 50px;
+}
+
+.trybewarts-header-logo {
+  width: 100px;
+  margin-left: 20px;
+}
+
+#buttom-sigin {
+  width: 300px;
+}
+
+.buttom {
+  background-color: rgb(91, 31, 126);
+  color: white;
+}
+
+.trybewarts-login {
+  display: flex;
+  margin-right: 20px;
+}
+
+.form-items {
+  margin: 5px;
+}
+
+main {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  padding-top: 20px;
+  font-family: Quattrocento, serif;
+  font-size: 20px;
+}
+
+#evaluation-form , .apagaTudo {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#evaluation-form h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: Dancing Script, serif;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  align-self: center;
+}
+
+#email-casa , #nome-completo {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 50%;
+}
+
+#input-email , #house {
+  flex-basis: 50%;
+}
+
+.section-family-learned {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.family {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 60%;
+}
+
+#label-family {
+  margin-bottom: 20px;
+}
+
+.family input {
+  margin-top: 0;
+}
+
+.learned {
+  display: flex;
+  flex-direction: column;
+}
+
+.colums-learned {
+  display: flex;
+  justify-content: space-between;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100px;
+}
+
+.avaliation {
+  align-self: center;
+}
+
+.container-family-learned {
+  display: flex;
+}
+
+.container-avaliation {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.container-avaliation .form-check {
+  padding-left: 0;
+}
+
+.container-avaliation .form-check-inline {
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+.container-textarea {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-textarea p {
+  font-size: 16px;
+}
+
+.agreement-check {
+  margin-bottom: 20px;
+}
+
+#submit-btn {
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.resume {
+  position: absolute;
+  left: 100px;
+}
+
+.resume-sobrenome {
+  top: 250px;
+}
+
+.resume-email {
+  top: 300px;
+}
+
+.resume-casa {
+  top: 350px;
+}
+
+.resume-familia {
+  top: 400px;
+}
+
+.resume-materiais {
+  top: 450px;
+}
+
+.resume-avaliacao {
+  top: 500px;
+}
+
+.resume-obs {
+  top: 550px;
+  width: 450px;
+  height: 300px;
+}
+
+.tittleAbsolute {
+  left: 120px;
+  top: 150px;
+}
+
