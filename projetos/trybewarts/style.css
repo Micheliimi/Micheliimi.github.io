@@ -268,7 +268,7 @@ footer {
     flex-direction: column;
   }
 
-  .section-family-learned {
+  .section-family-learned , .container-avaliation {
     flex-direction: column;
   }
 
@@ -280,13 +280,9 @@ footer {
     margin-bottom: 15px;
   }
 
-  .container-avaliation {
-    flex-direction: column;
-  }
-
   #parchment {
     width: 385px;
-    height: 650px;
+    height: 700px;
   }
 
   .resume {
@@ -294,41 +290,44 @@ footer {
     left: 40px;
   }
 
+  .resume-sobrenome , .resume-email , .resume-materiais , .resume-obs {
+    width: 300px;
+  }
+
   .resume-sobrenome {
-    top: 180px;
+    top: 175px;
   }
 
   .resume-email {
-    top: 220px;
+    top: 243px;
   }
 
   .resume-casa {
-    top: 260px;
+    top: 315px;
   }
 
   .resume-familia {
-    top: 300px;
+    top: 360px;
   }
 
   .resume-materiais {
-    top: 340px;
-    width: 300px;
+    top: 400px;
     height: 80px;
   }
 
   .resume-avaliacao {
-    top: 410px;
+    top: 470px;
   }
 
   .resume-obs {
-    top: 450px;
-    width: 300px;
+    top: 510px;
     height: 300px;
   }
 
   .tittleAbsolute {
     left: 0;
-    top: 65px;
+    top: 70px;
+    font-size: 16px;
   }
 }
 
