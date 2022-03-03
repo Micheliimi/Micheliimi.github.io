@@ -40,12 +40,6 @@ let enter = document.createElement('button');
   
   }
 
-
-
-
-  
-  
-
 function tabela (){
   for(let linha = 1; linha <= 5; linha += 1) {
     let divLinha = document.createElement('div');
